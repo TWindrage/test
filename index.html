@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
+<html lang="en">
+  <head>
     <title>Chardel Marketing</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
@@ -10,22 +10,29 @@
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
       }
+
       /* Style the header */
       .header {
+        z-index: 1;
         padding: 80px;
         text-align: center;
-        background: linear-gradient(#050c70, white);
+        background: linear-gradient(rgb(140, 32, 32), rgb(185, 88, 4));
         color: yellow;
       }
+
       /* Increase the font size of the h1 element */
       .header h1 {
+        z-index: 1;
         font-size: 40px;
       }
+
       /* Style the top navigation bar */
       .navbar {
+        position: sticky;
         overflow: hidden;
         background-color: black;
       }
+
       /* Style the navigation bar links */
       .navbar a {
         float: left;
@@ -35,36 +42,48 @@
         padding: 14px 20px;
         text-decoration: none;
       }
+
       /* Right-aligned link */
       .navbar a.right {
         float: right;
       }
+
       /* Change color on hover */
       .navbar a:hover {
         background-color: #ddd;
         color: black;
       }
+
       /* Possition */
       div.relative {
-        position: absolute;
-        left: 40%;
-        top: 20px;
+        position: relative;
+        z-index: 2;
+        left: 29%;
+        top: 6px;
+      }
+
+      body {
+        background-color: rgb(185, 88, 4); 
+      }
+
+      p {
+        color: #ffffff;
       }
     </style>
-    </head>
-    <body> 
-      <div class="header">
-        <h1>Feel free to contact any of our staff</h1>
-        <p></p>
-      </div>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="https://www.facebook.com/profile.php?id=100054380326648"><img src="Facebook_Shiny_Icon.png" height="20px" width="20px"></a>
+      <a href="https://twindrage.github.io/test/">Our staff</a>
+      <a href="#">Link</a>
+      <a href="#" class="right">Link</a>
       <div class="relative">
-        <img src = 'hi.jpg' height = '75px' width = '300px'>
+        <img src = 'hi.jpg' height = '40px' width = '180px'>
       </div>
-      <div class="navbar">
-        <a href="https://twindrage.github.io">Homepage</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#" class="right">Link</a>
-      </div>
-    </body>
-  </html>
+    </div>
+    <div class="header">
+      <h1>Feel free to contact our staff</h1>
+    </div>
+    <p>Kuya lalab</p>
+  </body>
+</html>
